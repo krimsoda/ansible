@@ -1,0 +1,4 @@
+/etc/ansible/hosts # Ansible Inventory
+
+Ansible ad hoc Commands
+ansible [host-pattern] -m [module] -a [module options]
