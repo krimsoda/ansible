@@ -1,1 +1,2 @@
-
+create ansible account on the target machine
+create ssh key
