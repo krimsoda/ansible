@@ -1,9 +1,9 @@
 # ansible
 
 
-:arrow_right:control node
+:arrow_right: Ansible Control Node
 
-:arrow_right:managed nodes
+:arrow_right: Ansible Managed Node
 
 Host: A remote machine managed by Ansible.
 
@@ -22,13 +22,13 @@ Roles: Redistributable units of organization that allow users to share automatio
 YAML: A popular and simple data format that is very clean and understandable by humans.
 
 ---
-ssh & ansible account setup
+Ssh & ansible account setup (Control Node)
 
 * Generate a key pair
 ```
 ssh-keygen
 ```
-* Add public key to remote server
+* Add public key to Managed Node
 ```
-ssh-copy-id user@remote ip address
+ssh-copy-id user@managed node ip address
 ```
