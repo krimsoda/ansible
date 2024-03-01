@@ -71,6 +71,10 @@ Create User (ubuntu)
 ansible -i inventory ubuntu -m user -a "name=ansible" create_home=yes -u student -b -k -K
 ansible -i inventory ubuntu -m shell -a "echo 'ansible:password'| chpasswd" -u student -b -k -K
 ```
+Verify User (ansible)
+```
+ansible -i inventory all -m command -a "id" -u ansible
+```
 
 
 
