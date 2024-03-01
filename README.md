@@ -30,8 +30,11 @@ Ssh & ansible account setup
 
 (Ansible Control Node)
 ```
-sudo useradd -m ansible && usermod -aG sudo ansible
+useradd -m -s /bin/bash -G sudo ansible
+```
+```
 passwd ansible
+```
 ```
 (Control Node)
 #passwordless SSH authentication
