@@ -30,7 +30,7 @@ Ssh & ansible account setup
 
 (Ansible Control Node)
 ```
-useradd ansible -G sudo
+sudo useradd -m ansible && usermod -aG sudo ansible
 passwd ansible
 ```
 (Control Node)
