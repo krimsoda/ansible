@@ -30,10 +30,13 @@ Ssh & ansible account setup
 
 (Ansible Managed Nodes)
 ```
-useradd -m -s /bin/bash -G sudo ansible
+useradd ansible
 ```
 ```
 passwd ansible
+```
+```
+echo 'ansible ALL=(ALL) NOPASSWD:ALL'>/etc/sudoers.d/ansible
 ```
 
 (Control Node)
