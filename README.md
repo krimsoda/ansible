@@ -3,8 +3,6 @@
 Automation controller
 
 AWX 
-Ansible Inventory
-> /etc/ansible/hosts
 
 :arrow_right: Ansible Control Node
 
@@ -29,6 +27,8 @@ YAML: A popular and simple data format that is very clean and understandable by 
 ---
 Ansible Inventory
 > /etc/ansible/hosts
+
+`etst`
 
 ---
 
@@ -58,3 +58,5 @@ passwd ansible
 ```
 echo 'ansible ALL=(ALL) NOPASSWD:ALL'>/etc/sudoers.d/ansible
 ```
+----
+Ad-Hoc Commands 
