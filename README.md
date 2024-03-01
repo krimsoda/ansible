@@ -3,7 +3,8 @@
 Automation controller
 
 AWX 
-
+Ansible Inventory
+> /etc/ansible/hosts
 
 :arrow_right: Ansible Control Node
 
@@ -24,6 +25,10 @@ Tasks: Units of action that combine a module and its arguments along with some o
 Roles: Redistributable units of organization that allow users to share automation code easier.
 
 YAML: A popular and simple data format that is very clean and understandable by humans.
+
+---
+Ansible Inventory
+> /etc/ansible/hosts
 
 ---
 
