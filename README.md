@@ -24,6 +24,7 @@ YAML: A popular and simple data format that is very clean and understandable by 
 ---
 Ssh & ansible account setup (Control Node)
 
+#passwordless SSH authentication
 * Generate a key pair
 ```
 ssh-keygen
