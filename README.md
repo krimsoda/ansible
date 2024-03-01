@@ -59,4 +59,14 @@ passwd ansible
 echo 'ansible ALL=(ALL) NOPASSWD:ALL'>/etc/sudoers.d/ansible
 ```
 ----
-Ad-Hoc Commands 
+Ad-Hoc Commands
+
+Create User (redhat)
+```
+ansible -i inventory ansible1 -m user -a "name=ansible" -u root -k
+ansible -i inventory ubuntu -m user -a "name=ansible" create_home=yes -b -k -K
+ansible -i inventory ubuntu -m shell -a "echo 'ansible:password'| chpasswd" -u student -b -k -K
+
+
+
+
