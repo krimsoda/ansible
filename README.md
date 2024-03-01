@@ -26,7 +26,22 @@ Roles: Redistributable units of organization that allow users to share automatio
 YAML: A popular and simple data format that is very clean and understandable by humans.
 
 ---
-Ssh & ansible account setup 
+
+Preparing:
+
+
+(Ansible Control Node)
+
+#passwordless SSH authentication
+* Generate a key pair
+```
+ssh-keygen
+```
+* Add public key to Managed Node
+```
+ssh-copy-id ansible@managed node ip address
+```
+
 
 (Ansible Managed Nodes)
 ```
@@ -37,16 +52,4 @@ passwd ansible
 ```
 ```
 echo 'ansible ALL=(ALL) NOPASSWD:ALL'>/etc/sudoers.d/ansible
-```
-
-(Control Node)
-
-#passwordless SSH authentication
-* Generate a key pair
-```
-ssh-keygen
-```
-* Add public key to Managed Node
-```
-ssh-copy-id ansible@managed node ip address
 ```
