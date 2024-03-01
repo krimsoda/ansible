@@ -1,6 +1,5 @@
 # ansible
 
-ssh & ansible account setup
 
 :arrow_right:control node
 
@@ -22,6 +21,14 @@ Roles: Redistributable units of organization that allow users to share automatio
 
 YAML: A popular and simple data format that is very clean and understandable by humans.
 
-```bash
-YAML: A popular and simple data format that is very clean and understandable by humans.
+---
+ssh & ansible account setup
+
+* Generate a key pair
+```
+ssh-keygen
+```
+* Add public key to remote server
+```
+ssh-copy-id user@remote ip address
 ```
