@@ -65,9 +65,12 @@ Create User (redhat)
 ```
 ansible -i inventory ansible1 -m user -a "name=ansible" -u root -k
 ansible -i inventory ansible1 -m shell -a "echo 'ansible:password' | passwd --stdin ansible" -u root -k
+```
+Create User (ubuntu)
+```
 ansible -i inventory ubuntu -m user -a "name=ansible" create_home=yes -b -k -K
 ansible -i inventory ubuntu -m shell -a "echo 'ansible:password'| chpasswd" -u student -b -k -K
-
+```
 
 
 
