@@ -74,6 +74,7 @@ ansible -i inventory ubuntu -m shell -a "echo 'ansible:password'| chpasswd" -u s
 Verify User (ansible)
 ```
 ansible -i inventory all -m command -a "id" -u ansible
+ansible rocky -m command -a "ls -l /root"
 ```
 ---
 Ansible adhoc Command Structure
