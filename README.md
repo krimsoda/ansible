@@ -75,6 +75,11 @@ Verify User (ansible)
 ```
 ansible -i inventory all -m command -a "id" -u ansible
 ```
+---
+Ansible adhoc Command Structure
+
+`ansible [target_hosts] -m [module] -a "[arguments]" [flags]`
+
 
 
 
