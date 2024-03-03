@@ -50,7 +50,7 @@ Preparing:
 #passwordless SSH authentication
 * Generate a key pair
 ```
-ssh-keygen
+ssh-keygen -t ed25519 -C "ansible"
 ```
 * Add public key to Managed Node
 ```
