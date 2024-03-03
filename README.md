@@ -40,7 +40,7 @@ Ansible Inventory
 Preparing:
 
 
-(Ansible Control Node)
+(Ansible Control Node) Ansible account
 
 #passwordless SSH authentication
 * Generate a key pair
@@ -53,7 +53,7 @@ ssh-copy-id ansible@managed node ip address
 ```
 
 
-(Ansible Managed Nodes)
+(Ansible Managed Nodes) Ansible account manual create
 ```
 useradd ansible
 ```
