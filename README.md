@@ -54,7 +54,7 @@ ssh-keygen -t ed25519 -C "ansible"
 ```
 * Add public key to Managed Node
 ```
-ssh-copy-id -i ~/.ssh/ansible.pub ansible@<IP Adderss>
+ssh-copy-id -i ~/.ssh/ansible.pub ansible@<IP Address>
 ```
 ---
 
