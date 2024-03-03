@@ -48,7 +48,7 @@ Preparing:
 (Ansible Control Node) Ansible account
 
 #passwordless SSH authentication
-* Generate a key pair
+* Generate a key pair specifically used for Ansible
 ```
 ssh-keygen -t ed25519 -C "ansible"
 ```
