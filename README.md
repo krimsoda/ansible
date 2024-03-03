@@ -79,12 +79,13 @@ ansible -i inventory debian -m shell -a "echo 'ansible:password'| chpasswd" -u s
 Verify User (ansible)
 ```
 ansible -i inventory all -m command -a "id" -u ansible
-ansible rocky -m command -a "ls -l /root"
+ansible rocky -m command -a "ls -l /root" -b
 ```
 Privilege escalation
 ```
 ansible rocky -i inventory -u root -k -m copy -a "src=/etc/sudoers.d/ansible dest=/etc/sudoers.d/ansible
 ansible debian -i inventory -u root -k -b -K -m copy -a "src=/etc/sudoers.d/ansible dest=/etc/sudoers.d/ansible
+```
 ---
 Ansible adhoc Command Structure
 
