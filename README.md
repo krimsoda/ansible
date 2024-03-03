@@ -28,6 +28,8 @@ YAML: A popular and simple data format that is very clean and understandable by 
 Ansible Inventory
 > /etc/ansible/hosts
 
+  [hosts](https://github.com/krimsoda/ansible/blob/01f0ab4fa43050f95956f19b277883bedd7e1d69/hosts)
+  
 `etst`
 
 ---
