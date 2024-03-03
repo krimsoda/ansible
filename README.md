@@ -4,6 +4,8 @@ Automation controller
 
 AWX 
 
+Ansible Galaxy
+
 :arrow_right: Ansible Control Node
 
 :arrow_right: Ansible Managed Nodes :Also referred to as ‘hosts’, these are the target devices (servers, network appliances or any computer) you aim to manage with Ansible.
