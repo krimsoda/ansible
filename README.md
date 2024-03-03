@@ -56,7 +56,7 @@ ssh-keygen
 ```
 ssh-copy-id ansible@managed node ip address
 ```
-
+---
 
 (Ansible Managed Nodes) Ansible account manual create
 ```
@@ -67,6 +67,9 @@ passwd ansible
 ```
 ```
 echo 'ansible ALL=(ALL) NOPASSWD:ALL'>/etc/sudoers.d/ansible
+```
+```
+sudo -l -U ansible
 ```
 ----
 Ad-Hoc Commands
