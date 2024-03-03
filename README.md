@@ -71,16 +71,20 @@ Create User (redhat)
 ansible -i inventory ansible1 -m user -a "name=ansible" -u root -k
 ansible -i inventory ansible1 -m shell -a "echo 'ansible:password' | passwd --stdin ansible" -u root -k
 ```
-Create User (ubuntu)
+Create User (debian)
 ```
-ansible -i inventory ubuntu -m user -a "name=ansible" create_home=yes -u student -b -k -K
-ansible -i inventory ubuntu -m shell -a "echo 'ansible:password'| chpasswd" -u student -b -k -K
+ansible -i inventory debian -m user -a "name=ansible" create_home=yes -u student -b -k -K
+ansible -i inventory debian -m shell -a "echo 'ansible:password'| chpasswd" -u student -b -k -K
 ```
 Verify User (ansible)
 ```
 ansible -i inventory all -m command -a "id" -u ansible
 ansible rocky -m command -a "ls -l /root"
 ```
+Privilege escalation
+```
+ansible rocky -i inventory -u root -k -m copy -a "src=/etc/sudoers.d/ansible dest=/etc/sudoers.d/ansible
+ansible debian -i inventory -u root -k -b -K -m copy -a "src=/etc/sudoers.d/ansible dest=/etc/sudoers.d/ansible
 ---
 Ansible adhoc Command Structure
 
