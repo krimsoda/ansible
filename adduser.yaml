@@ -1,0 +1,25 @@
+- hosts: all
+  become: yes
+  tasks:
+
+   - name: create ansible user
+     user:
+       name: ansible
+       state: present
+       shell: /bin/bash
+       createhome: yes
+
+   - name: add ssh key for ansible
+     tags: always
+     authorized_key:
+       user: ansible
+       key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFmHfelnqHL7XKLyY2RJrhCiCxadPXbYCZXt+iDJ6OT/ ansible
+
+   - name: add sudoers file for ansible
+     tags: always
+     copy:
+       src: /etc/ansible/ansible
+       dest: /etc/sudoers.d/ansible
+       owner: root
+       group: root
+       mode: 0440
