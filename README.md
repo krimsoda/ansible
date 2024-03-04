@@ -101,6 +101,11 @@ Ansible adhoc Command Structure
 
 `ansible server -m file -a "dest=/root/.ssh/authorized_keys state=absent"`
 
+---
+Ansible Playbook
+```
+ansible-playbook -i inventory adduser.yaml -k
+```
 
 
 
