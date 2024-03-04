@@ -81,7 +81,7 @@ ansible -i inventory ansible1 -m shell -a "echo 'ansible:password' | passwd --st
 ```
 Create User (debian)
 ```
-ansible -i inventory debian -m user -a "name=ansible" create_home=yes -u student -b -k -K
+ansible -i inventory debian -m user -a "name=ansible create_home=yes" -u student -b -k -K
 ansible -i inventory debian -m shell -a "echo 'ansible:password'| chpasswd" -u student -b -k -K
 ```
 Verify User (ansible)
