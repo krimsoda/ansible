@@ -104,7 +104,7 @@ Ansible adhoc Command Structure
 ---
 Ansible Playbook
 ```
-ansible-playbook -i inventory adduser.yaml -u root -k -v
+ansible-playbook -i inventory adduser.yaml -u root -k -vv
 ```
 -b :become sudo -K :sudo password -k :User/ssh password #root username not required -b -K refer ansible.cfg
 
