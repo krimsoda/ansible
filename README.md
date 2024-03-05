@@ -101,6 +101,8 @@ Ansible adhoc Command Structure
 
 `ansible server -m file -a "dest=/root/.ssh/authorized_keys state=absent"`
 
+-m: module -a: option accepts options either through the key=value syntax or a JSON string starting with { and ending with } for more complex option structure. 
+
 ---
 Ansible Playbook
 ```
