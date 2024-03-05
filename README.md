@@ -73,7 +73,7 @@ sudo -l -U ansible
 ----
 Ad-Hoc Commands
 
-~-b : --become-method  #privilege escalation method to use (default=sudo)`
+`-b : --become-method  #privilege escalation method to use (default=sudo)`
 
 `-k, --ask-pass  #ask for connection password`
 
