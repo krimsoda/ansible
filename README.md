@@ -103,6 +103,10 @@ Ansible adhoc Command Structure
 
 -m: module -a: option accepts options either through the key=value syntax or a JSON string starting with { and ending with } for more complex option structure.  -C: check 
 
+Query package version
+
+`ansible all -m command -a'/usr/bin/rpm -qi <PACKAGE NAME>' | grep 'SUCCESS\|Version'`
+
 ---
 Ansible Playbook
 ```
