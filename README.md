@@ -83,6 +83,8 @@ Ad-Hoc Commands
 
 `-a  #arguments`
 
+`-i #inventory path `
+
 
 Create User (redhat)
 ```
