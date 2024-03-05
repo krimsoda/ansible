@@ -73,11 +73,15 @@ sudo -l -U ansible
 ----
 Ad-Hoc Commands
 
-`-b : --become-method  #privilege escalation method to use (default=sudo)`
+`-b --become-method  #privilege escalation method to use (default=sudo)`
 
-`-k, --ask-pass  #ask for connection password`
+`-k --ask-pass  #ask for connection password`
 
-`-K, --ask-become-pass  #ask for privilege escalation password`
+`-K --ask-become-pass  #ask for privilege escalation password`
+
+`-m  #module`
+
+`-a  #arguments`
 
 
 Create User (redhat)
