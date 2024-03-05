@@ -8,3 +8,7 @@ bar.example.com
 one.example.com
 two.example.com
 three.example.com
+
+[webservers:vars]
+ansible_user=root
+ansible_password=password
