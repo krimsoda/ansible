@@ -106,6 +106,12 @@ Privilege escalation
 ansible rocky -i inventory -u root -k -m copy -a "src=/etc/sudoers.d/ansible dest=/etc/sudoers.d/ansible
 ansible debian -i inventory -u root -k -b -K -m copy -a "src=/etc/sudoers.d/ansible dest=/etc/sudoers.d/ansible
 ```
+Verify User + Sudo (ansible)
+```
+ansible -i inventory all -m command -a "sudo -l -U ansible" -u ansible
+ansible rocky -m command -a "ls -l /root" -b
+```
+```
 ---
 Ansible adhoc Command Structure
 
