@@ -73,6 +73,8 @@ sudo -l -U ansible
 ----
 Ad-Hoc Commands
 
+`-u  #username`
+
 `-b --become-method  #privilege escalation method to use (default=sudo) *not required if use root`
 
 `-K --ask-become-pass  #ask for privilege escalation password  *not required if use root`
