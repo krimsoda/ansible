@@ -83,7 +83,7 @@ Ad-Hoc Commands
 
 `-a  #arguments`
 
-`-i #inventory path `
+`-i #inventory path <inventory_file> `
 
 
 Create User (redhat)
