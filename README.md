@@ -60,7 +60,7 @@ ssh-copy-id -i ~/.ssh/ansible.pub ansible@<IP Address>
 
 (Ansible Managed Nodes) Ansible account manual create
 ```
-useradd ansible
+useradd -m ansible
 ```
 ```
 passwd ansible
@@ -73,6 +73,13 @@ sudo -l -U ansible
 ```
 ----
 Ad-Hoc Commands
+
+~-b : --become-method  #privilege escalation method to use (default=sudo)`
+
+`-k, --ask-pass  #ask for connection password`
+
+`-K, --ask-become-pass  #ask for privilege escalation password`
+
 
 Create User (redhat)
 ```
@@ -96,6 +103,7 @@ ansible debian -i inventory -u root -k -b -K -m copy -a "src=/etc/sudoers.d/ansi
 ```
 ---
 Ansible adhoc Command Structure
+
 
 `ansible [target_hosts] -m [module] -a "[arguments]" [flags]`
 
