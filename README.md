@@ -38,7 +38,6 @@ Ansible Config File
 [hosts](https://github.com/krimsoda/ansible/blob/01f0ab4fa43050f95956f19b277883bedd7e1d69/hosts)
   
 
-`etst`
 
 ---
 
