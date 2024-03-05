@@ -42,7 +42,7 @@ Ansible Config File
 Preparing:
 
 
-(Ansible Control Node) Ansible account
+(Ansible Control Node) Ansible account login
 
 #passwordless SSH authentication
 * Generate a key pair specifically used for Ansible
