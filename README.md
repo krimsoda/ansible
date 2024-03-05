@@ -29,12 +29,10 @@ YAML: A popular and simple data format that is very clean and understandable by 
 ---
 Ansible Config File
 
-> /etc/ansible/ansible.cfg
-
+> /etc/ansible/ansible.cfg 
 [ansible.cfg](https://github.com/krimsoda/ansible/blob/6e0c1ab6d46af67e8a75be20ba6e6f8debe4e6f3/ansible.cfg)
 
 > /etc/ansible/hosts
-
 [hosts](https://github.com/krimsoda/ansible/blob/01f0ab4fa43050f95956f19b277883bedd7e1d69/hosts)
   
 
