@@ -43,7 +43,7 @@ Preparing:
 
 Vi setting identation
 
-`~./vimrc : autocmd FileType yaml setlocal ai ts=2 sw=2 et`
+~./vimrc : `autocmd FileType yaml setlocal ai ts=2 sw=2 et`
 
 (Ansible Control Node) Ansible account login
 
