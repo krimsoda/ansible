@@ -89,6 +89,8 @@ Ad-Hoc Commands
 
 `-i #inventory path <inventory_file> `
 
+> ansible [pattern] -m [module] -a "[module options]"
+
 
 Create User (redhat)
 ```
