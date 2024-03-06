@@ -91,7 +91,7 @@ Ad-Hoc Commands
 
 > ansible [pattern] -m [module] -a "[module options]"
 
-
+___
 Create User (redhat)
 ```
 ansible -i inventory ansible1 -m user -a "name=ansible" -u root -k
