@@ -35,17 +35,16 @@ Ansible Config File
 > /etc/ansible/hosts
 [hosts](https://github.com/krimsoda/ansible/blob/01f0ab4fa43050f95956f19b277883bedd7e1d69/hosts)
   
-
-
 ---
-
-Preparing:
 
 Vi setting identation for YAML
 
 install vim `dnf install vim`
 
 vi ~./vimrc : `autocmd FileType yaml setlocal ai ts=2 sw=2 et`
+
+---
+Preparing:
 
 (Ansible Control Node) Ansible account login
 
