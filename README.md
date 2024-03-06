@@ -41,7 +41,9 @@ Ansible Config File
 
 Preparing:
 
-Vi setting identation
+Vi setting identation for YAML
+
+`dnf install vim`
 
 ~./vimrc : `autocmd FileType yaml setlocal ai ts=2 sw=2 et`
 
