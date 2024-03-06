@@ -132,6 +132,12 @@ Query package version
 
 `ansible all -m command -a'/usr/bin/rpm -qi <PACKAGE NAME>' | grep 'SUCCESS\|Version'`
 
+`User management`
+
+`File Management`
+
+`Utilities`
+
 ---
 Ansible Playbook
 ```
