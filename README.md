@@ -85,6 +85,8 @@ Ad-Hoc Commands
 
 `-m  #module`
 
+`-C  #check mode Ansible does not make any changes to remote systems.`
+
 `-a  #arguments`
 
 `-i #inventory path <inventory_file> `
