@@ -149,5 +149,6 @@ ansible-playbook -i inventory adduser.yaml -u root -k -vv
 ```
 -b :become sudo -K :sudo password -k :User/ssh password #root username not required -b -K refer ansible.cfg
 
-
+---
+Ansible Vault
 
