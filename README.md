@@ -89,7 +89,7 @@ Ad-Hoc Commands
 
 `-a  #arguments`
 
-`-vvvvv  #verbose (-v) option. Every extra v will provide the end user with more debug output.
+`-vvvvv  #verbose (-v) option. Every extra v will provide the end user with more debug output.`
 
 `-i #inventory path <inventory_file> `
 
