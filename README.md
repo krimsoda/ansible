@@ -132,9 +132,13 @@ ping
 
 `ansible -m ping`
 
-delete file
+`User management`
 
-`ansible server -m file -a "dest=/root/.ssh/authorized_keys state=absent"`
+`File Management`
+
+create file  
+
+delete file  `ansible server -m file -a "dest=/root/.ssh/authorized_keys state=absent"`
 
 -m: module -a: option accepts options either through the key=value syntax or a JSON string starting with { and ending with } for more complex option structure.  -C: check 
 
@@ -142,9 +146,9 @@ Query package version
 
 `ansible all -m command -a'/usr/bin/rpm -qi <PACKAGE NAME>' | grep 'SUCCESS\|Version'`
 
-`User management`
 
-`File Management`
+
+
 
 `Utilities`
 
