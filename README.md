@@ -128,6 +128,10 @@ Ansible adhoc Command Structure
 
 `ansible [target_hosts] -m [module] -a "[arguments]" [flags]`
 
+ping
+
+`ansible -m ping`
+
 delete file
 
 `ansible server -m file -a "dest=/root/.ssh/authorized_keys state=absent"`
